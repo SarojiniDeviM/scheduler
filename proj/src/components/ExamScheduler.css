@@ -1,0 +1,98 @@
+/* ExamScheduler.css */
+
+/* General Page Styling */
+.exam-scheduler-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #abc2f1; /* Tailwind's gray-100 */
+  padding: 1rem;
+}
+
+/* Navigation Bar */
+.exam-scheduler-nav {
+  width: 100%;
+  background: #abc2f1; /* Tailwind's blue-600 */
+  color: rgb(187, 163, 234);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exam-scheduler-nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.exam-scheduler-nav a {
+  color: rgb(218, 125, 125);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.exam-scheduler-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Card Styling */
+.exam-scheduler-card {
+  background: rgb(175, 231, 192);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Title */
+.exam-scheduler-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #374151; /* Tailwind's gray-700 */
+  margin-bottom: 1rem;
+}
+
+/* Input Fields */
+.exam-scheduler-input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.exam-scheduler-input:focus {
+  border-color: #e084ee; /* Tailwind's blue-600 */
+}
+
+/* Submit Button */
+.exam-scheduler-button {
+  width: 100%;
+  background-color: #090a0a; /* Tailwind's blue-600 */
+  color: rgb(233, 255, 239);
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.exam-scheduler-button:hover {
+  background-color: #0a0f1d; /* Tailwind's blue-700 */
+}
+
+/* Label Styling */
+.exam-scheduler-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: #0b0c0e; /* Tailwind's gray-700 */
+}
