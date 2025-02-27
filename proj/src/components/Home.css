@@ -1,71 +1,99 @@
-/* Home Page Container */
-.min-h-screen {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #abc2f1;
-    padding: 24px;
-  }
-  
-  /* Heading */
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 16px;
-    color: #333;
-  }
-  
-  /* Scheduled Exams Section */
-  .w-full {
-    width: 100%;
-    max-width: 600px;
-    margin-top: 24px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #444;
-    margin-bottom: 12px;
-  }
-  
-  /* Exam Cards */
+/* Home Container */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1c1f0;
+  padding: 24px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Exams List */
+.exams-list {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
   .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  
-  @media (min-width: 768px) {
-    .grid {
       grid-template-columns: repeat(2, 1fr);
-    }
   }
-  
-  .bg-blue-500 {
-    background-color: #007bff;
-    color: rgb(183, 225, 66);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 16px;
-    border: 1px solid #0056b3;
-  }
-  
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  p {
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  /* Message When No Exams are Scheduled */
-  .text-gray-500 {
-    color: #6b7280;
-    font-size: 16px;
-  }
-  
+}
+
+/* Exam Card */
+.exam-card {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.exam-card:hover {
+  transform: scale(1.03);
+}
+
+/* Subject and Timer Box */
+.exam-box {
+  background-color: white;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.subject {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.timer {
+  font-size: 16px;
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Details Section */
+.details {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #555;
+}
+
+/* No Exams Message */
+.no-exams {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}

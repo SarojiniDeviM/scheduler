@@ -43,15 +43,6 @@ export default function ExamScheduler() {
   return (
     <div className="exam-scheduler-container">
       
-      {/* Navigation Bar */}
-      <nav className="exam-scheduler-nav">
-        <h1 className="text-xl font-bold">Exam Scheduler</h1>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/scheduler">Scheduler</Link></li>
-        </ul>
-      </nav>
-
       {/* Form Section */}
       <Card className="exam-scheduler-card">
         <CardContent>
@@ -62,26 +53,31 @@ export default function ExamScheduler() {
               <Label className="exam-scheduler-label">Exam Name</Label>
               <Input type="text" name="examName" value={formData.examName} onChange={handleChange} required className="exam-scheduler-input" />
             </div>
+            <br></br>
 
             <div>
               <Label className="exam-scheduler-label">Subject</Label>
               <Input type="text" name="subject" value={formData.subject} onChange={handleChange} required className="exam-scheduler-input" />
             </div>
+            <br></br>
 
             <div>
               <Label className="exam-scheduler-label">Date</Label>
               <Input type="date" name="date" value={formData.date} onChange={handleChange} required className="exam-scheduler-input" />
             </div>
+            <br></br>
 
             <div>
               <Label className="exam-scheduler-label">Time</Label>
               <Input type="time" name="time" value={formData.time} onChange={handleChange} required className="exam-scheduler-input" />
             </div>
+            <br></br>
 
             <div>
               <Label className="exam-scheduler-label">Duration (minutes)</Label>
               <Input type="number" name="duration" value={formData.duration} onChange={handleChange} required className="exam-scheduler-input" />
             </div>
+            <br></br>
 
             <div>
               <Label className="exam-scheduler-label">Email</Label>
