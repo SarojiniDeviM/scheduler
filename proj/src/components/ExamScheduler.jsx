@@ -139,17 +139,7 @@ export default function ExamScheduler() {
             </div>
             <br />
 
-            <div>
-              <Label className="exam-scheduler-label">Your Email</Label>
-              <Input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="exam-scheduler-input"
-              />
-            </div>
+           
             <br />
 
             <Button type="submit" className="exam-scheduler-button" disabled={loading}>

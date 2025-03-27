@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import Navbar from "./components/Navbar";
+import Help from "./components/Help"; // ✅ Import Help Page
 
 function App() {
   const navigate = useNavigate();
@@ -47,6 +48,7 @@ function App() {
           <Route path="/scheduler" element={<ExamScheduler addExam={addExam} />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/help" element={<Help />} /> {/* ✅ Added Help Page Route */}
         </Routes>
       </div>
     </div>

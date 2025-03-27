@@ -5,14 +5,14 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #a6bdf1; /* Tailwind's gray-200 */
+  background-color: #fff6938b; /* Tailwind's gray-200 */
   padding: 1rem;
   animation: fadeIn 1s ease-in-out;
 }
 
 /* Form card styling */
 .auth-card {
-  background: white;
+  background: #fffc9b;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
